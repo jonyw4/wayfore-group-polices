@@ -28,3 +28,5 @@ plugins:
   - 'react-hooks'
 rules:
   "react/no-children-prop": "off"
+  "react/react-in-jsx-scope": "off"
+  "@typescript-eslint/explicit-module-boundary-types": "off"
