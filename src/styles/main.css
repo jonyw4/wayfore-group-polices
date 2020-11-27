@@ -1,0 +1,3 @@
+h1 {
+  @apply text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl;
+}

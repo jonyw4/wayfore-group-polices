@@ -9,9 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
-          Políticas de Grupo da Wayfore
-        </h1>
+        <h1>Políticas de Grupo da Wayfore</h1>
         <ol>
           <li>Enviar conteúdo pornográfico</li>
           <li>Fazer propaganda, sem a permissão dos moderadores</li>
