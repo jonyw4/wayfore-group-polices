@@ -1,5 +1,5 @@
 {
-  "name": "wayfore-group-polices",
+  "name": "@jonyw4/wayfore-group-polices",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -46,7 +46,7 @@
   },
   "release": {
     "branches": [
-      "master"
+      "main"
     ]
   },
   "commitlint": {
