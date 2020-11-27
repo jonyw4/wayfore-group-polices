@@ -1,0 +1,65 @@
+{
+  "name": "wayfore-group-polices",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.0.3",
+    "postcss": "8.1.10",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tailwindcss": "2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "14.14.10",
+    "@types/react": "17.0.0",
+    "autoprefixer": "10.0.3",
+    "typescript": "4.1.2",
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@types/react-dom": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.4.1",
+    "@typescript-eslint/parser": "4.4.1",
+    "codecov": "3.8.0",
+    "eslint": "7.7.0",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-jest": "23.20.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.4",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "husky": "4.3.0",
+    "prettier": "2.1.2",
+    "semantic-release": "17.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        2,
+        "never",
+        [
+          "start-case",
+          "pascal-case"
+        ]
+      ]
+    }
+  }
+}
